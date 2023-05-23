@@ -9,24 +9,26 @@ import { Login } from './Components/Login'
 import { SignUp } from './Components/SignUp'
 import { Footer } from './Components/Footer'
 import { Template } from './Components/Template'
-
+import { About } from './Components/About'
+import Contact from './Components/Contact'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-
+    <About/>
+    <Contact/>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/template' element={<Template />} />
 
 
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
 
       </Router>
 
